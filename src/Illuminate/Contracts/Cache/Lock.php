@@ -15,11 +15,11 @@ interface Lock
     /**
      * Attempt to acquire the lock for the given number of seconds.
      *
-     * @param  int  $seconds
+     * @param  int  $acquireLockForSeconds
      * @param  callable|null  $callback
      * @return mixed
      */
-    public function block($seconds, $callback = null);
+    public function block($acquireLockForSeconds, $callback = null);
 
     /**
      * Release the lock.
